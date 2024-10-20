@@ -54,7 +54,7 @@ with open(sys.argv[1], "r") as reader:
         if "unauthorized" in output1 and "unauthorized" in output2:
             print_colored("[-] Your Key Is Invalid!", "red")
         else:
-            print("[+] Possibly Your Key is Valid!!", "green")
+            print_colored("[+] Possibly Your Key is Valid!!", "green")
             if "unauthorized" not in output1:
                 print(output1)
                 print("\n")
